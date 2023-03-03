@@ -26,7 +26,6 @@ pipeline{
 		}
 		stage('getting file 2'){
 			steps{
-				sh "rm -rf *"
 				dir('/mnt/project/22Q2'){
 					sh "git clone https://github.com/KetanSP25/docker-test.git -b 22Q2"
 					sh "rm -rf /mnt/project/22Q2/docker-test/Jenkinsfile"
@@ -44,7 +43,6 @@ pipeline{
 		}
 		stage('getting file 3'){
 			steps{
-				sh "rm -rf *"
 				dir('/mnt/project/22Q3'){
 					sh "git clone https://github.com/KetanSP25/docker-test.git -b 22Q3"
 					sh "rm -rf /mnt/project/22Q3/docker-test/Jenkinsfile"
