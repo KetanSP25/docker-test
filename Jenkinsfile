@@ -30,7 +30,7 @@ pipeline{
 				dir('/mnt/project/22Q2'){
 					sh "git clone https://github.com/KetanSP25/docker-test.git -b 22Q2"
 					sh "rm -rf /mnt/project/22Q2/docker-test/Jenkinsfile"
-					sh "chmod -R 777 /mnt/project/22Q2/docker-test/index/docker-test/index.html"
+					sh "chmod -R 777 /mnt/project/22Q2/docker-test/index.html"
 								 	}
 				}
 		}
